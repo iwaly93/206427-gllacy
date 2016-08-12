@@ -79,49 +79,52 @@
 
         <h1>Сливочное мороженое</h1>
 
-        <div class="characteristic">
+        <div class="charactiristics">
 
-        <div class="sorting">
+        <form class="sorting" action="https://" method="post">
           <p>Сортировка:</p>
-          <div class="popular">
-            <a href="#">по популярности</a>
-          </div>
-        </div>
+          <select name="sorting">
+               <option value="popular">по популярности</option>
+               <option value="new">по новизне</option>
+                <option value="sale">по скидке</option>
+           </select>
+            </form>
+            </div>
 
         <div class="price">
+        <form class="price-scale" action="https://echo.htmlacademy.ru" method="post">
           <p>Цена: 100 руб. – 500 руб.</p>
-          <div class="price-scale">
-          </div>
+          <input type="range" name="scale"  min="0" max="1000" step="1" value="500" value="100">
+         </form>
         </div>
 
-<div class="fatness">
+  <div class="fatness-choice">
+  <form class="fatness" action="https://echo.htmlacademy.ru" method="post">
           <p>Жирность:</p>
+        
+<label><input type="radio" name="item-fat" value="0">0 %</label>
+<label><input type="radio" name="item-fat" value="10" checked>10 %</label>
+<label><input type="radio" name="item-fat" value="30">до 30 %</label>
+<label><input type="radio" name="item-fat" value="31">> 30 %</label>
+
+          </form>
+        </div>
+      
+
           <div class="fatness-choice">
-
-          <ul class="fat-variation">
-          <li class="item-fat">0 %</li>
-            <li class="item-fat">до 10 %</li>
-            <li class="item-fat">до 30 %</li>
-            <li class="item-fat">выше 30 %</li>
-
-          </ul>
-
-          </div>
-        </div>
-        </div>
-
-        <div class="fillers">
-
-        <ul class="choose-filler">
-          <li class="item-filler">шоколадные</li>
-            <li class="item-filler">сахарные присыпки</li>
-            <li class="item-filler">фрукты</li>
-            <li class="item-filler">сиропы</li>
-            <li class="item-filler">джемы</li>
-
-          </ul>
-        	
-        	  <form class="email-form" action="https://" method="post">
+          <form class="fillers" action="https://echo.htmlacademy.ru" method="post">
+             <p>Наполнители:</p>
+       
+        <label><input type="radio" name="item-filler" value="chocolate" checked>шоколадные</label>
+        <label><input type="radio" name="item-filler2" value="sugar" checked>сахарные присыпки</label>
+        <label><input type="radio" name="item-filler" value="fruits">фрукты</label>
+        <label><input type="radio" name="item-filler" value="syrups">сиропы</label>
+        <label><input type="radio" name="item-filler" value="jams">джемы</label>
+                
+</form>
+</div>
+          
+        	  <form class="filler-form" action="https://" method="post">
             <button class="btn-filler" type="submit">Применить</button>
           </form>
 
@@ -218,13 +221,13 @@
 
         <div class="pages">
         	<ul class="page-list">
-        	<p><</p>
-        	<p>1</p>
-        	<li class="item-page">2</li>
-        	<li class="item-page">3</li>
-        	<li class="item-page">4</li>
-        	<li class="item-page">5</li>
-        	<li class="item-page">></li>
+        	<li><</li>
+        	<li>1</li>
+        	<li class="item-page"><a href="#">2</a></li>
+        	<li class="item-page"><a href="#">3</a></li>
+        	<li class="item-page"><a href="#">4</a></li>
+        	<li class="item-page"><a href="#">5</a></li>
+        	<li class="item-page"><a href="#">></a></li>
         	</ul>
         </div>
 
