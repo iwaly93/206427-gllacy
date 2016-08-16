@@ -79,27 +79,24 @@
 
         <h1>Сливочное мороженое</h1>
 
-        <div class="charactiristics">
+        <form class="charactiristics" action="https://" method="post">
 
-        <form class="sorting" action="https://" method="post">
+        <div class="sorting" >
           <p>Сортировка:</p>
           <select name="sorting">
                <option value="popular">по популярности</option>
                <option value="new">по новизне</option>
                 <option value="sale">по скидке</option>
            </select>
-            </form>
             </div>
 
         <div class="price">
-        <form class="price-scale" action="https://echo.htmlacademy.ru" method="post">
           <p>Цена: 100 руб. – 500 руб.</p>
           <input type="range" name="scale"  min="0" max="1000" step="1" value="500" value="100">
-         </form>
         </div>
 
   <div class="fatness-choice">
-  <form class="fatness" action="https://echo.htmlacademy.ru" method="post">
+ 
           <p>Жирность:</p>
         
 <label><input type="radio" name="item-fat" value="0">0 %</label>
@@ -107,12 +104,10 @@
 <label><input type="radio" name="item-fat" value="30">до 30 %</label>
 <label><input type="radio" name="item-fat" value="31">> 30 %</label>
 
-          </form>
+          
         </div>
-      
-
-          <div class="fatness-choice">
-          <form class="fillers" action="https://echo.htmlacademy.ru" method="post">
+ 
+             <div class="fillers">
              <p>Наполнители:</p>
        
         <label><input type="radio" name="item-filler" value="chocolate" checked>шоколадные</label>
@@ -121,14 +116,14 @@
         <label><input type="radio" name="item-filler" value="syrups">сиропы</label>
         <label><input type="radio" name="item-filler" value="jams">джемы</label>
                 
-</form>
 </div>
-          
-        	  <form class="filler-form" action="https://" method="post">
-            <button class="btn-filler" type="submit">Применить</button>
-          </form>
 
-        </div>
+          
+        	  <div class="filler-form">
+            <button class="btn-filler" type="submit">Применить</button>
+          </div>
+
+       </form>
 
         <div class="ice-cream">
 
